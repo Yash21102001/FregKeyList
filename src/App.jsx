@@ -5,6 +5,7 @@ import Counter from './components/Counter'
 import ThemeToggel from "./components/ThemeToggle"
 import TodoList from './components/TodoList'
 import UserProfile from './components/UserProfile'
+import FruitList from './components/FruitList'
 const styles = {
   light: {
     bg: "#F5F7FA",       // Soft off-white (background)
@@ -69,6 +70,7 @@ function App() {
       {activeTab === "counter" && < Counter theme={theme}/>}
       {activeTab === "todo" && < TodoList theme={theme}/>}
       {activeTab === "profile" && < UserProfile theme={theme}/>}
+      {activeTab === "fruits" && < FruitList theme={theme}/>}
       <ThemeToggel theme={"theme"} ThemeToggle={ThemeToggle} />
     </div>
   )
